@@ -113,3 +113,56 @@ body {
   text-decoration: none;
   color: #502050;
 }
+
+@media screen and (min-width: 900px) {
+  .section1 {
+    flex-direction: row;
+    margin: 5rem 5rem 3rem;
+    justify-content: space-between;
+  }
+  .section1 .header {
+    width: 50%;
+  }
+  .section1 .header h1 {
+    text-align: left;
+    margin: 0;
+    font-size: 2.785rem;
+  }
+  .section1 .header p {
+    text-align: left;
+    margin-top: 1rem;
+  }
+  .section1 .ratings {
+    width: 40%;
+  }
+  .section1 .ratings .rating {
+    width: 80%;
+    justify-content: start;
+    align-items: start;
+    flex-direction: row;
+    padding: .5rem 0 .5rem 1rem;
+  }
+  .section1 .ratings .rating:nth-child(2) {
+    margin-left: 2rem;
+  }
+  .section1 .ratings .rating:nth-child(3) {
+    margin-left: 4rem;
+  }
+  .section2 {
+    margin: 0 5rem 5rem;
+  }
+  .section2 .reviews {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .section2 .reviews .review {
+    width: 32%;
+  }
+  .section2 .reviews .review:nth-child(2) {
+    margin-top: 1rem;
+  }
+  .section2 .reviews .review:nth-child(3) {
+    margin-top: 2rem;
+  }
+}

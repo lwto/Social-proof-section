@@ -61,7 +61,7 @@ body{
 
 .section2{
     margin: 0 1rem 4rem;
-    .reviews{
+    .reviews{ 
         .review{
             margin-bottom: 1rem;
             border-radius: 5px;
@@ -102,5 +102,59 @@ body{
     a{
         text-decoration: none;
         color:$first-color;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .section1{
+        flex-direction: row;
+        margin:5rem 5rem 3rem;
+        justify-content: space-between;
+        .header{   
+            width:50%;        
+            h1{
+                text-align: left;
+                margin:0;
+                font-size: 2.785rem;
+            }
+            p{
+                text-align: left;
+                margin-top: 1rem;
+            }
+        }
+        .ratings{
+            width:40%;
+            .rating{
+                width:80%;
+                justify-content: start;
+                align-items: start;
+                flex-direction: row;
+                padding:.5rem 0 .5rem 1rem;
+            }
+            .rating:nth-child(2){
+                margin-left: 2rem;
+            }
+            .rating:nth-child(3){
+                margin-left: 4rem;
+            }
+
+        }
+    }
+    .section2{
+       margin:0 5rem 5rem;
+        .reviews{    
+            display:flex;
+            justify-content: space-between;
+            align-items: start;
+            .review{
+                width:32%;
+            }
+            .review:nth-child(2){
+                margin-top: 1rem;
+            }
+            .review:nth-child(3){
+                margin-top: 2rem;
+            }
+        }
     }
 }
