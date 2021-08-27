@@ -9,6 +9,9 @@ body {
   font-family: 'Spartan', sans-serif;
   color: #502050;
   font-size: 15px;
+  background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: left top, right bottom;
 }
 
 .section1 {
@@ -37,6 +40,7 @@ body {
 
 .section1 .ratings {
   width: 100%;
+  max-width: 500px;
 }
 
 .section1 .ratings .rating {
@@ -66,7 +70,15 @@ body {
   margin: 0 1rem 4rem;
 }
 
+.section2 .reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .section2 .reviews .review {
+  max-width: 500px;
   margin-bottom: 1rem;
   border-radius: 5px;
   color: #f7f2f7;
@@ -76,7 +88,7 @@ body {
 .section2 .reviews .review .review-header {
   display: flex;
   align-items: center;
-  padding: 2rem;
+  padding: 2.5rem;
   padding-bottom: 1.5rem;
 }
 
@@ -99,7 +111,7 @@ body {
 }
 
 .section2 .reviews .review p {
-  padding: 0 2rem 2rem;
+  padding: 0 2.5rem 3rem;
   font-size: 0.75rem;
 }
 
@@ -152,7 +164,7 @@ body {
     margin: 0 5rem 5rem;
   }
   .section2 .reviews {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: start;
   }
