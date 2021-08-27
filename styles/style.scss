@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap');
+@import "colors";
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Spartan', sans-serif;
+    color:$first-color;
+    font-size: 15px;
+}
+
+.section1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:3rem 1rem 1.5rem;
+    .header{
+        margin-bottom: 2rem;     
+        h1{
+            font-size: 1.875rem;
+            text-align: center;
+            margin:1rem 2.3rem;
+        }
+        p{
+            text-align: center;
+            line-height: 1.65rem;
+            color:$text;
+        }
+    }
+    .ratings{
+        width:100%;
+        
+        .rating{
+            
+            background-color: $first-color-alt;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+           
+            .stars{
+                margin-top: .5rem;
+                img{
+                    width:13px;
+                }
+            }
+            h4{
+                margin: .5rem 2rem;
+                font-size: .785rem;
+            }
+        }
+    }
+  
+}
+
+.section2{
+    margin: 0 1rem 4rem;
+    .reviews{
+        .review{
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            color:$first-color-alt;
+            background-color: $first-color;
+            .review-header{
+                display:flex;
+                align-items: center;
+                padding: 2rem;
+                padding-bottom:1.5rem;
+                img{
+                    border-radius: 50%;
+                    width:2.5rem;
+                }
+                div{
+                    margin-left:1.5rem;
+                    h4{
+                        font-size: .875rem;
+                    }
+                    h5{
+                        color:$verified;
+                        font-weight: 500;
+                    }
+                }
+            }
+            p{
+                padding: 0 2rem 2rem;
+                font-size: 0.75rem;
+            }
+        }
+    }
+}
+
+.attribution{
+    font-size: 10px;
+    text-align: center;
+    padding:5px;
+    a{
+        text-decoration: none;
+        color:$first-color;
+    }
+}
